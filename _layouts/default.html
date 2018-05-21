@@ -49,12 +49,15 @@ function removeTransition(e) {
 <body>
     
 <!-- Keys -->
-<ul>
 {% for post in site.posts %}
-    <li>{{ post.title }}</li>
-    
+<div class="keys">
+    <div data-key= "{{ post.keycode }}" class="key">
+      <kbd>G</kbd>
+      <span class="sound">{{ post.title }}</span>
+    </div>
+</div>
+
 {% endfor %}
-    </ul>
     
 <!-- SOUNDS -->
 
